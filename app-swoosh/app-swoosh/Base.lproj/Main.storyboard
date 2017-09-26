@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="CmO-DW-qRQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2qW-Eo-x3Y">
                                 <rect key="frame" x="112" y="20" width="150" height="50"/>
@@ -52,12 +52,10 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7V-Rx-pgS" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="10" y="597" width="355" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7V-Rx-pgS" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="609" width="343" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40138056506849318" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Syg-si-bqu"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,15 +65,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CmO-DW-qRQ" secondAttribute="trailing" id="CdV-J9-Uqp"/>
-                            <constraint firstItem="Y7V-Rx-pgS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DGJ-l0-IuW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y7V-Rx-pgS" secondAttribute="trailing" constant="10" id="LGg-S0-9Xa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CmO-DW-qRQ" secondAttribute="bottom" id="WBF-AJ-Hqj"/>
                             <constraint firstItem="CmO-DW-qRQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b3p-az-w2t"/>
-                            <constraint firstItem="CmO-DW-qRQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="feG-EF-vLP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y7V-Rx-pgS" secondAttribute="bottom" constant="20" id="xNZ-fK-EVt"/>
+                            <constraint firstItem="CmO-DW-qRQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="feG-EF-vLP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bg" destination="CmO-DW-qRQ" id="60T-5n-5pr"/>
+                        <outlet property="logo" destination="2qW-Eo-x3Y" id="u1P-JR-hbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

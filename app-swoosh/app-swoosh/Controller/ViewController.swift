@@ -8,22 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var bg: UIImageView!
+class WelcomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //programowo ustawiane obiekty na ekranie
-//        logo.frame = CGRect(
-//            x: view.frame.size.width / 2 - logo.frame.size.width / 2,
-//            y: 50,
-//            width: logo.frame.size.width,
-//            height: logo.frame.size.height)
-//
-//        bg.frame = view.frame
     }
 
     override func didReceiveMemoryWarning() {
